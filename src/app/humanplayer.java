@@ -1,5 +1,4 @@
 package app;
-import java.util.Scanner ;
 
 public class humanplayer extends player {
     
@@ -7,7 +6,6 @@ public class humanplayer extends player {
     {
         super(b);
     }
-
 
     public int askformove() 
     {
