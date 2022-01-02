@@ -1,7 +1,4 @@
 package app;
-import java.util.Scanner ;
-
-import javax.swing.SwingWorker.StateValue;
 
 public class game {
 
