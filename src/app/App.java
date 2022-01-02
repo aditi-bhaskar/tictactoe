@@ -1,7 +1,5 @@
 package app;
 
-import app.game.estatus;
-
 public class App {
 
     static board tictactoe = new board();
