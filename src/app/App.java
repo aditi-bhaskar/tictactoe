@@ -1,46 +1,23 @@
 package app;
-import java.util.*
+
+import app.game.estatus;
 
 public class App {
 
     static board tictactoe = new board();
     public static void main(String[] args) throws Exception {
+        System.out.println("TicTacToe Game");
         
-        Scanner s = new Scanner(System.in) ;
-        int game = -1 ;
-        
-        while (game < 0 && game > 1)  { // change limits as more games are added
-            System.out.println("Which game do you want to play? (enter the number)")
-            System.out.println("\t 0 - TicTacToe")
-            System.out.println("\t 1 - StoryBuilder")
+        player p1 = new humanplayer(tictactoe);
+        player p2 = new computerplayer(tictactoe);
 
-            game = s.nextInt() ;
+        tictactoe.printboard();
 
-            if (game == 0) { // TICTACTOE
-                System.out.println("TicTacToe Game");
+        game g = new game(p1, p2, tictactoe);
 
-                player p1 = new humanplayer(tictactoe);
-                player p2 = new computerplayer(tictactoe);
+        System.out.println(g.playgame());
 
-                tictactoe.printboard();
-
-                game g = new game(p1, p2, tictactoe);
-
-                System.out.println(g.playgame()); 
-                
-//                 return;
-            } 
-            else if(game == 1) { // STORYBUILDER
-                System.out.println("StoryBuilder Game");
-                
-//                 return;
-            }
-        
-        }
-        
-
-
-    /* DEAD CODE!!!!!!!!!!
+    /*
         while (tictactoe.checkwin() == false){
 
             //Human Play

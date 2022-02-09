@@ -17,4 +17,3 @@ public abstract class player {
 
     protected board b_;
 }
-
