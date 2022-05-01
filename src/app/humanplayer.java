@@ -8,7 +8,6 @@ public class humanplayer extends player {
         super(b);
     }
 
-
     public int askformove() 
     {
         Scanner input = new Scanner(System.in) ;

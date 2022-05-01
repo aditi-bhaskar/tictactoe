@@ -1,5 +1,4 @@
 package app;
-import java.util.Scanner ;
 import java.util.Random ;
 
 public class computerplayer extends player {
@@ -100,15 +99,7 @@ public class computerplayer extends player {
         }
         return played;
     }
-    /*
-    public int randomizer(int i, int j, int k, int l) {
-        int a = 0, b = 0, c = 0, d = 0;
-        rand.nextInt(i, j, k, l);
-        //come back to this .... 
-        return a, b, c, d;
-    }
-    */
-
+    
     private int move_= 0;
     Random rand = new Random();
 }

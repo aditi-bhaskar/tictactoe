@@ -1,7 +1,4 @@
 package app;
-import java.util.Scanner ;
-
-import javax.swing.SwingWorker.StateValue;
 
 public class game {
 
@@ -41,7 +38,6 @@ public class game {
         return status_;
     }
 
-
     public enum estatus{
         INCOMPLETE, //0
         DRAW, //1
@@ -54,8 +50,5 @@ public class game {
     private player p2_;
     private int playno_ = 0;
     private board b_;
-
     
-   
-
 }

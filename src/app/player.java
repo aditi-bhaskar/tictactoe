@@ -5,7 +5,6 @@ public abstract class player {
     player(board b)
     {   
         b_ = b;
-
     }
 
     protected board getBoard()
