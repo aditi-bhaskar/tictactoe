@@ -13,6 +13,7 @@ public class game {
         while (status_ == estatus.INCOMPLETE){
             playno_++;
             if ((playno_)%2 == 0){       //  'O'
+                System.out.println("\nPlayer 2 (O) move : ") ;
                 int a = p2_.askformove();
                 b_.setsquare(a, 'O');
                 b_.printboard();
@@ -23,6 +24,7 @@ public class game {
                     status_ = estatus.DRAW;
                 }
             } else {                     //  'X'
+                System.out.println("\nPlayer 1 (X) move : ") ;
                 int a = p1_.askformove();
                 b_.setsquare(a, 'X');
                 b_.printboard();
